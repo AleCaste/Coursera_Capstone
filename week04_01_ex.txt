@@ -1,0 +1,26 @@
+Introduction where you discuss the business problem and who would be interested in this project.
+[A description of the problem and a discussion of the background]
+
+. The client is an editorial company which already publishes several magazines and newspapers.
+. They want to launch a new product; a short newspaper which is to be distributed free of charge in central places in the city of Bogota, Colombia.
+. The revenues of this newspaper will ONLY be based on advertising.
+. The target consists in highly-educated working professionals the advertisers can be interested in.
+. The problem the client faces is that they don't know which locations in the city would be the best suited to distribute the newspaper to the pedestrians.
+
+
+
+
+
+Data
+[where you describe the data that will be used to solve the problem and the source of the data]
+
+. The source of data is the FourSquare API.
+. This source gives us categorized venues of all kinds around the coordinates of our choice.
+. The idea is to build a grid of equally sized blocks in the city and get the venues for each block.
+. Then we will keep ONLY those venues of certain categories.
+. These categories will be the FEATURES for our Machine Learning model.
+. Examples of the data categories we will be using categories are: office, business center, convention center, fair, government building, etc.
+. And finally will apply Machine Learning to identify clusters of those venues within the city.
+. Clusters will take into account the DENSITY of venues since we want to distribute the highest number of newspapers per location.
+. These clusters will give the client the list of best locations in the city to start distributing the newspaper.
+
