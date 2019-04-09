@@ -24,3 +24,42 @@ Data
 . Clusters will take into account the DENSITY of venues since we want to distribute the highest number of newspapers per location.
 . These clusters will give the client the list of best locations in the city to start distributing the newspaper.
 
+
+
+office, business center, convention center, fair,
+ATM, Bank, Business Service, Credit Union, Currency Exchange, Financial or Legal Service, Notary, 
+Building, Government Building, Cultural Center, Research Station
+
+
+CLIENT_ID = '2G2DFHUHZD5RUHPNWDN2BYBBWAHUNDXQ2ZE0YTJPSBNXSEEF' # your Foursquare ID
+CLIENT_SECRET = '3QSZ3QT0KMQPMWUT3PI4P5BL1FPPID5RQL5THIVNJTT133FI' # your Foursquare Secret
+VERSION = '20180604'
+LIMIT = 30
+print('Your credentails:')
+print('CLIENT_ID: ' + CLIENT_ID)
+print('CLIENT_SECRET:' + CLIENT_SECRET)
+
+
+url = f'https://api.foursquare.com/v2/venues/search?client_id={CLIENT_ID}&client_secret={CLIENT_SECRET}&ll={latitude},{longitude}&v={VERSION}&query={search_query}&radius={radius}&limit={LIMIT}'
+url
+
+#results = requests.get(url).json()
+results = requests.get(url)
+print( results )
+print('\n')
+results = results.json()
+print( results )
+
+
+# assign relevant part of JSON to venues
+# json.loads(your_json_string)  # To assign a json string to map
+import json
+venues = results['response']['venues']
+print( venues )
+print( json.dumps(venues[0:1], indent=2, sort_keys=True) )  # To prettify json
+# tranform venues into a dataframe
+dataframe = json_normalize(venues)
+dataframe.head()
+
+
+labs/coursera/ML0101EN/ML0101EN-Clus-DBSCN-weather-py-v1.ipynb
