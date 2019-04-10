@@ -25,10 +25,24 @@ Data
 . These clusters will give the client the list of best locations in the city to start distributing the newspaper.
 
 
+https://github.com/arszero/Coursera_Capstone
 
-office, business center, convention center, fair,
-ATM, Bank, Business Service, Credit Union, Currency Exchange, Financial or Legal Service, Notary, 
-Building, Government Building, Cultural Center, Research Station
+
+    '4bf58dd8d48988d124941735',  # office
+    '56aa371be4b08b9a8d573517',  # business center
+    '4bf58dd8d48988d1ff931735',  # convention center
+    '4eb1daf44b900d56c88a4600',  # fair
+    '52f2ab2ebcbc57f1066b8b56',  # atm
+    '4bf58dd8d48988d10a951735',  # bank
+    '5453de49498eade8af355881',  # business service
+    '5032850891d4c4b30a586d62',  # credit union
+    '5744ccdfe4b0c0459246b4be',  # currency exchange
+    '503287a291d4c4b30a586d65',  # financial or legal service
+    '5ae95d208a6f17002ce792b2',  # notary
+    '4bf58dd8d48988d130941735',  # building
+    '4bf58dd8d48988d126941735',  # government building
+    '52e81612bcbc57f1066b7a32',  # cultural center
+    '58daa1558bbb0b01f18ec1b2',  # research station
 
 
 CLIENT_ID = '2G2DFHUHZD5RUHPNWDN2BYBBWAHUNDXQ2ZE0YTJPSBNXSEEF' # your Foursquare ID
