@@ -26,6 +26,7 @@ Data
 
 
 https://github.com/arszero/Coursera_Capstone
+https://github.com/arszero/Coursera_Capstone/blob/master/Presentation.pdf
 
 
     '4bf58dd8d48988d124941735',  # office
